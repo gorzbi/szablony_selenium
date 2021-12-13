@@ -7,6 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
+import java.time.Duration;
 
 public class Configuration {
 
@@ -21,7 +22,8 @@ public class Configuration {
 
         System.out.println("Start testu");
 
-        firefox.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        firefox.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        //firefox.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
 

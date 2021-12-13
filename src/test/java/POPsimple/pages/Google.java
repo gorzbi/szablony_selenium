@@ -21,8 +21,14 @@ public class Google {
     @FindBy(name = "q")
     private WebElement searchInput;
 
+    // przycisk szukaj przed wpisaniem fraz do szukania
     @FindBy(name = "btnK")
     private WebElement search;
+
+    // przycisk szukaj po wpisaniu fraz do szukania
+    @FindBy(xpath = "(//input[@name='btnK'])[1]")
+    private WebElement search2;
+
 
 
     private WebDriver firefox;
@@ -40,6 +46,7 @@ public class Google {
         zgoda.click();
         searchInput.click();
         searchInput.sendKeys(slowo); // zmienna slowo zmieniana w testach
-        searchInput.sendKeys(Keys.ENTER);
+        //searchInput.sendKeys(Keys.ENTER);
+        search2.click();
     }
 }
