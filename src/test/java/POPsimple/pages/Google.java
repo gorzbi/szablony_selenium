@@ -30,7 +30,7 @@ public class Google {
     private WebDriver firefox;
 
     // zainicjowanie parametrów
-    public Google(WebDriver firefox) {
+    public Google(WebDriver firefox) { //nazwa taka sama jak klasy w której jest
         PageFactory.initElements(firefox, this);
         this.firefox = firefox;
     }
