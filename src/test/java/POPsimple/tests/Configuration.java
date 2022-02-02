@@ -30,6 +30,7 @@ public class Configuration {
     @AfterMethod
     public void end() {
         System.out.println("Koniec testu");
+        firefox.quit();
 
     }
 
