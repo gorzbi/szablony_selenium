@@ -65,6 +65,13 @@ public class Dependencje {
             <version>5.1.0</version>
         </dependency>
 
+- robienie screenów full page 
+        <dependency>
+            <groupId>ru.yandex.qatools.ashot</groupId>
+            <artifactId>ashot</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+
 
     </dependencies >
 
