@@ -29,7 +29,7 @@ public class Google {
 
     private WebDriver firefox;
 
-    // zainicjowanie parametrów
+    // zainicjowanie zidentyfikowanych elementów na stronie
     public Google(WebDriver firefox) {
         PageFactory.initElements(firefox, this);
         this.firefox = firefox;
