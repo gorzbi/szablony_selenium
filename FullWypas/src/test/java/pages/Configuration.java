@@ -20,7 +20,7 @@ public class Configuration {
 
             firefox.get("https://google.com");
 
-            //kom
+            //komentarz
         }
     }
 }
