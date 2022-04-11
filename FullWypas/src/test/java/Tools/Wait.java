@@ -1,0 +1,30 @@
+package Tools;
+
+import io.netty.util.Timeout;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+public class Wait {
+
+    public static void waitforElementToExist (WebDriver browser, By locator) {
+        WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    public static void waitForElementToBeVisible (WebDriver browser, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public static void waitForNotEmptyList (WebDriver browser, By locator) {
+        WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
+        wait.until(webDriver -> webDriver.findElements(locator).size()>0);
+    }
+}
+

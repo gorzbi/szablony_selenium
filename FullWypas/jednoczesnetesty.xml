@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng/testng-1.0.dtd">
+<suite name="Test">
+    <test name="JuveSzukaj" thread-count="3" parallel="methods">
+        <classes>
+            <class name="Tests.SzukajJuveTest"></class>
+        </classes>
+    </test>
+</suite>
