@@ -3,22 +3,19 @@ package Tests;
 import Pages.Google;
 import Tools.Screen;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.model.ScreenCapture;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-
-import static Tools.Screen.getScreenschot;
 
 public class SzukajJuveTest extends Configuration {
 
     @Test
     public void szukamyJuve() throws IOException {
 
-        ExtentTest test01 = raport.createTest("Raport test Juve");
+        ExtentTest test01 = raport.createTest("Raport test Juve", "Opis raportu");
 
         test01.info("Rozpoczęcie testu");
 
@@ -28,10 +25,10 @@ public class SzukajJuveTest extends Configuration {
         WebElement rezultatSzukania = browser.findElement(By.id("result-stats"));
 
         if (rezultatSzukania.isDisplayed()) {
-            test01.pass("Udało się wyszukać", Screen.getScreenschot(browser));// odwołanie do metody z klasy Screen
+            test01.log(Status.PASS,"Udało się wyszukać", Screen.getScreenshot(browser));// odwołanie do metody z klasy Screen
         }
         else {
-            test01.fail("Nie udało się wyszukać", Screen.getScreenschot(browser));
+            test01.log(Status.FAIL,"Nie udało się wyszukać", Screen.getScreenshot(browser));
         }
     }
 }

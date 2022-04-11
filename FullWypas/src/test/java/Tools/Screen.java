@@ -15,6 +15,7 @@ import java.util.Date;
 public class Screen {
 
     public static String timestamp() {
+
         return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
     }
 
@@ -28,16 +29,16 @@ public class Screen {
         // zrobienie screena
         TakesScreenshot screenshot = (TakesScreenshot) browser;
         File plik = screenshot.getScreenshotAs(OutputType.FILE);
-        String sciezkaScreena = "src/screeny/"+nazwaScreena;
-        FileUtils.copyFile(plik, new File(sciezkaScreena));
-        return sciezkaScreena;
+        String path = "src/screeny/"+nazwaScreena;
+        FileUtils.copyFile(plik, new File(path));
+        return path;
     }
 
     // pobranie screena
 
-    public static Media getScreenschot(WebDriver browser) throws IOException {
+    public static Media getScreenshot(WebDriver browser) throws IOException {
 
-        String sciezkaScreena = zrzutEkranu(browser);
-        return MediaEntityBuilder.createScreenCaptureFromPath(sciezkaScreena).build();
+        String path = zrzutEkranu(browser);
+        return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
     }
 }
