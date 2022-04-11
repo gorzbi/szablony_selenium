@@ -23,7 +23,7 @@ public class Configuration {
         raport = new ExtentReports(); // tworzymy obiekt
 
         // konfiguracja raportu
-        spark = new ExtentSparkReporter("src/raporty/raport.html");
+        spark = new ExtentSparkReporter("raport.html");
         spark.config().setTheme(Theme.DARK);
         spark.config().setReportName("Nazwa raportu");
         spark.config().setDocumentTitle("Nazwa dokumentu");
