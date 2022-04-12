@@ -3,8 +3,6 @@ package Tests;
 import Pages.Google;
 import Tools.Screen;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -26,11 +24,10 @@ public class SzukajJuveTest extends Configuration {
         WebElement rezultatSzukania = browser.findElement(By.id("result-stats"));
 
         if (rezultatSzukania.isDisplayed()) {
-            //test01.log(Status.PASS,"YEAH", MediaEntityBuilder.createScreenCaptureFromPath("src/screeny/screen2022-04-11 20-50-23.png").build());
-            test01.log(Status.PASS,"Udało się wyszukać", Screen.getScreenshot(browser));// odwołanie do metody z klasy Screen
+            test01.pass("Udało się wyszukać", Screen.getScreenshot(browser));// odwołanie do metody z klasy Screen
         }
         else {
-            test01.log(Status.FAIL,"Nie udało się wyszukać", Screen.getScreenshot(browser));
+            test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser));
         }
     }
 }
