@@ -23,7 +23,7 @@ public class Configuration {
         raport = new ExtentReports(); // tworzymy obiekt
 
         // konfiguracja raportu
-        spark = new ExtentSparkReporter("raport.html");
+        spark = new ExtentSparkReporter("raport.html"); // aby screeny były widoczne na raporcie wymaga głównego folderu projektu
         spark.config().setTheme(Theme.DARK);
         spark.config().setReportName("Nazwa raportu");
         spark.config().setDocumentTitle("Nazwa dokumentu");
