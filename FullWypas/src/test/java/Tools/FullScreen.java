@@ -40,5 +40,13 @@ public class FullScreen {
         String path2 = getFullScreen(browser);
         return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
     }
+    
+    // v2 pobranie screena
+
+    public static Media getFullScreenshot(WebDriver browser, String jira, String nazwa) throws IOException {
+
+        String path2 = getFullScreen(browser, jira, nazwa); // w teście w danym kroku je implementujemy jira to np. nazwa folderu do zapisania screenów
+        return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
+    }
 
 }
