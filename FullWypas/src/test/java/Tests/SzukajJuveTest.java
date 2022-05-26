@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class SzukajJuveTest extends Configuration {
+    
+    String nazwaFolderu = "Folder";
 
     @Test
     public void szukamyJuve() throws IOException {
@@ -29,5 +31,15 @@ public class SzukajJuveTest extends Configuration {
         else {
             test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser));
         }
+        
+        // v2 
+         if (rezultatSzukania.isDisplayed()) {
+            test01.pass("Udało się wyszukać", Screen.getScreenshot(browser, nazwaFolderu, "nazwaPlikuPNG"));// nazwa folderu jest w zmiennej a png sami teraz nazywamy
+        }
+        else {
+            test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser, nazwaFolderu, "nazwaPlikuPNG"));
+        }
+        
+        
     }
 }
