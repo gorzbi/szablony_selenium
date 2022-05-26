@@ -27,7 +27,7 @@ public class FullScreen {
 
         // zainicjowanie robienia screena - full web
         Screenshot fullScreen = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(5)).takeScreenshot(browser);
-        String path = "src/screeny/" + nazwaFullScreena;
+        String path = "src/screeny/" +nazwaFolderu+"/"+nazwaFullScreena;
         ImageIO.write(fullScreen.getImage(), "PNG", new File(path));
         return path;
     }
@@ -43,9 +43,9 @@ public class FullScreen {
     
     // v2 pobranie screena
 
-    public static Media getFullScreenshot(WebDriver browser, String jira, String nazwa) throws IOException {
+    public static Media getFullScreenshot(WebDriver browser, String nazwaFolderu, String nazwa) throws IOException {
 
-        String path2 = getFullScreen(browser, jira, nazwa); // w teście w danym kroku je implementujemy jira to np. nazwa folderu do zapisania screenów
+        String path2 = getFullScreen(browser, nazwaFolderu, nazwa); // w teście w danym kroku je implementujemy nazwaFolderu to np. folder do zapisania screenów, a nazwa to nazwa którą podajemy w teście dla kroku jak ma nazywać się screen
         return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
     }
 
