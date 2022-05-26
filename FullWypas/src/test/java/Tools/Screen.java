@@ -41,4 +41,12 @@ public class Screen {
         String path = zrzutEkranu(browser);
         return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
     }
+    
+    // v2 pobrania screena
+    
+    public static Media getScreenshot(WebDriver browser, String jira, String nazwa) throws IOException {
+
+        String path = zrzutEkranu(browser, jira, nazwa); // w teście w danym kroku je implementujemy jira to np. nazwa folderu do zapisania screenów
+        return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
+    }
 }
