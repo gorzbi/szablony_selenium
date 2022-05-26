@@ -29,7 +29,7 @@ public class Screen {
         // zrobienie screena
         TakesScreenshot screenshot = (TakesScreenshot) browser;
         File plik = screenshot.getScreenshotAs(OutputType.FILE);
-        String path = "src/screeny/"+nazwaScreena;
+        String path = "src/screeny/"+nazwaFolderu+"/"+nazwaScreena;
         FileUtils.copyFile(plik, new File(path));
         return path;
     }
@@ -44,9 +44,9 @@ public class Screen {
     
     // v2 pobrania screena
     
-    public static Media getScreenshot(WebDriver browser, String jira, String nazwa) throws IOException {
+    public static Media getScreenshot(WebDriver browser, String nazwaFolderu, String nazwa) throws IOException {
 
-        String path = zrzutEkranu(browser, jira, nazwa); // w teście w danym kroku je implementujemy jira to np. nazwa folderu do zapisania screenów
+        String path = zrzutEkranu(browser, nazwaFolderu, nazwa); // w teście w danym kroku je implementujemy jira to np. nazwa folderu do zapisania screenów
         return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
     }
 }
