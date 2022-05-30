@@ -11,7 +11,8 @@ import java.io.IOException;
 
 public class SzukajJuveTest extends Configuration {
     
-    String nazwaFolderu = "Folder";
+    String dobryScreen = "good";
+    String evilScreen = "bad";
 
     @Test
     public void szukamyJuve() throws IOException {
@@ -32,12 +33,21 @@ public class SzukajJuveTest extends Configuration {
             test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser));
         }
         
-        // v2 
+        // v2 -> z folderem do którego ma być zapisany screen
          if (rezultatSzukania.isDisplayed()) {
-            test01.pass("Udało się wyszukać", Screen.getScreenshot(browser, nazwaFolderu, "nazwaPlikuPNG"));// nazwa folderu jest w zmiennej a png sami teraz nazywamy
+            test01.pass("Udało się wyszukać", Screen.getScreenshot(browser, goodScreen, "nazwaPlikuPNG"));// nazwa folderu jest w zmiennej a png sami teraz nazywamy
         }
         else {
-            test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser, nazwaFolderu, "nazwaPlikuPNG"));
+            test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser, evilScreen, "nazwaPlikuPNG"));
+        }
+        
+        
+        // v3 -> element łapany w screen (zdefiniowany w danym page) z folderem do którego ma być zapisany screen
+         if (rezultatSzukania.isDisplayed()) {
+            test01.pass("Udało się wyszukać", Screen.getScreenshot(browser, element, goodScreen, "nazwaPlikuPNG"));// nazwa folderu jest w zmiennej a png sami teraz nazywamy
+        }
+        else {
+            test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser, element, evilScreen, "nazwaPlikuPNG"));
         }
         
         
