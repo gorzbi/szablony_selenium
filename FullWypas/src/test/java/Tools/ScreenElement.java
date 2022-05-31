@@ -30,4 +30,27 @@ public class ScreenElement {
         String path2 = screenElementu(driver, element, jira, nazwa);
         return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
     }
+    
+    
+    // v2 full screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "nazwa" podawany jako string w klasie testowej
+    
+        private static String screenElementu(WebDriver driver, WebElement element, String jira, String nazwa) throws IOException {
+
+        String nazwaScreenElementu = nazwa +".png";
+
+        // zainicjowanie robienia screena dla elementu
+        Screenshot elementScreen = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1)).takeScreenshot(driver, element);
+        File outFile = new File("src/resources/screeny/"+jira+"/"+nazwaScreenElementu);
+        File parentDir = outFile.getParentFile();
+        parentDir.mkdirs();
+        ImageIO.write(elementScreen.getImage(), "PNG", outFile);
+        return outFile.getPath();
+    }
+
+    // pobranie screena
+    public static Media getElementScreenshot(WebDriver driver, WebElement element, String jira, String nazwa) throws IOException {
+        String path2 = screenElementu(driver, element, jira, nazwa);
+        return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
+    }
+    
 }
