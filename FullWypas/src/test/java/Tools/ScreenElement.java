@@ -14,20 +14,20 @@ import java.io.IOException;
 
 public class ScreenElement {
 
-    private static String screenElementu(WebDriver driver, WebElement element, String jira, String nazwa) throws IOException {
+    private static String screenElementu(WebDriver driver, WebElement element, String nazwa) throws IOException {
 
         String nazwaScreenElementu = "ScreenElement" + nazwa +".png";
 
         // zainicjowanie robienia screena dla elementu
         Screenshot elementScreen = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1)).takeScreenshot(driver, element);
-        String path = "src/resources/screeny/"+jira+"/"+nazwaScreenElementu;
+        String path = "src/resources/screeny/"+nazwaScreenElementu; // folder istnieje
         ImageIO.write(elementScreen.getImage(), "PNG", new File(path));
         return path;
     }
 
     // pobranie screena
-    public static Media getElementScreenshot(WebDriver driver, WebElement element, String jira, String nazwa) throws IOException {
-        String path2 = screenElementu(driver, element, jira, nazwa);
+    public static Media getElementScreenshot(WebDriver driver, WebElement element, String nazwa) throws IOException {
+        String path2 = screenElementu(driver, element, nazwa);
         return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
     }
     
