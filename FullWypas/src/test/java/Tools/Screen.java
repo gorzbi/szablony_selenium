@@ -29,7 +29,7 @@ public class Screen {
         // zrobienie screena
         TakesScreenshot screenshot = (TakesScreenshot) browser;
         File plik = screenshot.getScreenshotAs(OutputType.FILE);
-        String path = "src/screeny/"+nazwaFolderu+"/"+nazwaScreena;
+        String path = "src/screeny/"+nazwaScreena;
         FileUtils.copyFile(plik, new File(path));
         return path;
     }
@@ -42,11 +42,27 @@ public class Screen {
         return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
     }
     
-    // v2 pobrania screena
     
-    public static Media getScreenshot(WebDriver browser, String nazwaFolderu, String nazwa) throws IOException {
+    
+    // v2 screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "jira" i nazwa screena jako "nazwa" podawane jako stringi w klasie testowej
+    
+    private static String zrzutEkranu(WebDriver driver, String jira, String nazwa) throws IOException {
 
-        String path = zrzutEkranu(browser, nazwaFolderu, nazwa); // w teście w danym kroku je implementujemy jira to np. nazwa folderu do zapisania screenów
+        // nadanie nazwy dla screena
+        String nazwaScreena = nazwa+".png";
+
+        // zrobienie screena
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File plik = screenshot.getScreenshotAs(OutputType.FILE);
+        String path = "src/resources/screeny/"+jira+"/"+nazwaScreena;
+        FileUtils.copyFile(plik, new File(path));
+        return path;
+    }
+
+    // pobranie screena
+    public static Media getScreenshot(WebDriver driver, String jira, String nazwa) throws IOException {
+
+        String path = zrzutEkranu(driver, jira, nazwa);
         return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
     }
 }
