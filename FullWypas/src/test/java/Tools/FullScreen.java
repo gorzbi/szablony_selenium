@@ -29,7 +29,7 @@ public class FullScreen {
 
         // zainicjowanie robienia screena - full web
         Screenshot fullScreen = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(5)).takeScreenshot(browser);
-        String path = "src/screeny/" +nazwaFolderu+"/"+nazwaFullScreena;
+        String path = "src/screeny/"+nazwaFullScreena; // folder istnieje
         ImageIO.write(fullScreen.getImage(), "PNG", new File(path));
         return path;
     }
