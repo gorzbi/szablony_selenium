@@ -19,6 +19,8 @@ public class FullScreen {
 
         return new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
     }
+    
+    // full screen -> zapis wszystkich screenów do jednego folderu
 
 
     private static String getFullScreen(WebDriver browser) throws IOException {
@@ -41,11 +43,26 @@ public class FullScreen {
         return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
     }
     
-    // v2 pobranie screena
+    
+    
+    // v2 full screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "nazwa" podawany jako string w klasie testowej
 
-    public static Media getFullScreenshot(WebDriver browser, String nazwaFolderu, String nazwa) throws IOException {
+    private static String pelnyScreen(WebDriver driver, String jira, String nazwa) throws IOException {
+        
+        String nazwaFullScreena = nazwa +".png";
 
-        String path2 = getFullScreen(browser, nazwaFolderu, nazwa); // w teście w danym kroku je implementujemy nazwaFolderu to np. folder do zapisania screenów, a nazwa to nazwa którą podajemy w teście dla kroku jak ma nazywać się screen
+        // zainicjowanie robienia screena - full web
+        Screenshot fullScreen = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(5)).takeScreenshot(driver);
+        File outFile = new File("src/resources/screeny/"+jira+"/"+nazwaFullScreena);
+        File parentDir = outFile.getParentFile(); // pobranie powyższej ścieżki
+        parentDir.mkdirs(); // utworzenie ścieżki, jej brakujacych folderów/podfolderów
+        ImageIO.write(fullScreen.getImage(), "PNG", outFile);
+        return outFile.getPath(); // pobranie pełnej ścieżki do screena
+    }
+
+    // pobranie screena
+    public static Media getFullScreenshot(WebDriver driver, String jira, String nazwa) throws IOException {
+        String path2 = pelnyScreen(driver, jira, nazwa);
         return MediaEntityBuilder.createScreenCaptureFromPath(path2).build();
     }
 
