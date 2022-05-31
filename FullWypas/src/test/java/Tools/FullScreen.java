@@ -45,7 +45,7 @@ public class FullScreen {
     
     
     
-    // v2 full screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "nazwa" podawany jako string w klasie testowej
+    // v2 full screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "jira" i nazwa screena jako "nazwa" podawane jako stringi w klasie testowej
 
     private static String pelnyScreen(WebDriver driver, String jira, String nazwa) throws IOException {
         
