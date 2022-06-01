@@ -44,10 +44,10 @@ public class SzukajJuveTest extends Configuration {
         
         // v3 -> element łapany w screen (zdefiniowany w danym page) z folderem do którego ma być zapisany screen
          if (rezultatSzukania.isDisplayed()) {
-            test01.pass("Udało się wyszukać", Screen.getScreenshot(browser, element, goodScreen, "nazwaPlikuPNG"));// nazwa folderu jest w zmiennej a png sami teraz nazywamy
+            test01.pass("Udało się wyszukać", ElementScreen.getElementScreenshot(browser, element, goodScreen, "nazwaPlikuPNG"));// nazwa folderu jest w zmiennej a png sami teraz nazywamy
         }
         else {
-            test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser, element, evilScreen, "nazwaPlikuPNG"));
+            test01.fail("Nie udało się wyszukać", ElementScreen.getElementScreenshot(browser, element, evilScreen, "nazwaPlikuPNG"));
         }
         
         
