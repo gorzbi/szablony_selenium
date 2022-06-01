@@ -9,10 +9,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class Wait {
+    
+    // można korzystać z locator gdzie sami wpisujemy np. xpath lub z element gdzie już mamy zdefiniowany wyszukany element jako zmienną
 
     public static void waitforElementToExist (WebDriver browser, By locator) {
         WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+    
+    public static void waitforElementToBeClickable (WebDriver driver, WebElement element) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public static void waitForElementToBeVisible (WebDriver browser, WebElement element) {
