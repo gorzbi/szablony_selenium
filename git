@@ -1,0 +1,33 @@
+GIT: working copy (add) >> indeks (commit) >> repo lokalne (push) >> repo online
+
+// configuracja usera aby w historii było widać kto kiedy jakie zmiany robił
+git config --global user.name
+git config --global user.email
+
+// inicjalizacja repo
+git init
+
+// status repo
+git status
+
+// dodanie plików do indeksu
+git add <nazwa plik.rozszerzenie> // dodaje konkretny plik
+git aad . // dodaje wszystkie pliki
+
+// usuwanie plików nie trakowanych w indeksie
+git clean -n //pokazuje jakie pliki będą usunięte
+git clean -f // usuwa pliki
+
+// commit
+commit -m "komentarz"
+
+// historia commitów
+git log
+
+// podróż między commitami
+git log
+git checkout <hash z log>
+git checkout master // powrót do głównego widoku
+
+// cofnięcie zmian z indeksu do workingcopy
+git reset HEAD <nazwa pliku.rozszerzenie>
