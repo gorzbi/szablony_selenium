@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="POST z pliku">
-      <change afterPath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/body.json" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="POST z pliku + update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650624794740</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="POST z pliku + update">
+      <created>1656337839507</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656337839507</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +199,7 @@
     </ignored-roots>
     <MESSAGE value="Rest Assured 1st commit" />
     <MESSAGE value="GET" />
-    <option name="LAST_COMMIT_MESSAGE" value="GET" />
+    <MESSAGE value="POST z pliku + update" />
+    <option name="LAST_COMMIT_MESSAGE" value="POST z pliku + update" />
   </component>
 </project>
