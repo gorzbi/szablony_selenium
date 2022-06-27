@@ -21,5 +21,6 @@ public class POST {
                 .body(cialoRequesta)
         .when().post("https://jsonplaceholder.typicode.com/posts")
         .then().log().all();
+
     }
 }

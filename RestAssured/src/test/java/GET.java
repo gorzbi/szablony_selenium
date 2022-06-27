@@ -6,6 +6,7 @@ public class GET {
 
     @Test
     public static void get() {
+
         System.out.println("Nic nie wyświetli");
         when().get("https://jsonplaceholder.typicode.com/posts/1"); // tu wykona tylko request ale nic nam nie wyświetli
 
