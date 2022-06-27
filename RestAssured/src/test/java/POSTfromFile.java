@@ -18,5 +18,6 @@ public class POSTfromFile {
                 .body(cialoRequesta)
         .when().post("https://jsonplaceholder.typicode.com/posts")
         .then().log().all();
+        //elo
     }
 }
