@@ -32,7 +32,7 @@ public class ScreenElement {
     }
     
     
-    // v2 full screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "nazwa" podawany jako string w klasie testowej
+    // v2 screen -> zapis screenów do poszczególnych folderów, nazwa folderu jako parametr "nazwa" podawany jako string w klasie testowej
     
         private static String screenElementu(WebDriver driver, WebElement element, String jira, String nazwa) throws IOException {
 
