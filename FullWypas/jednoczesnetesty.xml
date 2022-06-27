@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE suite SYSTEM "http://testng/testng-1.0.dtd">
-<suite name="Nazwa zestawu testów">
-    <test name="Nazwa testu najlepiej nazwa zbliżona do nazwy klasy testowej" thread-count="3" parallel="methods"> // ilość wątków i po czym ma być współbieżne uruchamianie testów -> tu po metodzie
-        <classes>
-            <class name="Tests.SzukajJuveTest"></class> // nazwa paczki.nazwa konkretnej klasy której dotyczy
-        </classes>
-    </test>
-</suite>
