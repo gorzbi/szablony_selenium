@@ -33,7 +33,7 @@ public class Google {
 
     public void wyszukanieSlowa(String slowo) { // dajemy parametr o nazwie slowo, który jest zmienną, która będzie różna w różnych testach
 
-        Wait.waitforElementToBeClickable(driver, zgoda); // czekamy na możliwość kliknięcia w element
+        Wait.waitforElementToBeClickable(driver, zgoda); // z klasy Wait wyciągamy metodę - czekamy na możliwość kliknięcia w element
         zgoda.click();
         poleSzukania.click();
         poleSzukania.sendKeys(slowo); // zmienna slowo zmieniana w klasie testu jako parametr
