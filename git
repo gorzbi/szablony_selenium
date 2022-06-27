@@ -10,11 +10,18 @@ git init
 // status repo
 git status
 
+// cofnięcie zmian w pliku nietrakowanym (nie dodanych do indeksu)
+git checkout -- <nazwa pliku.rozszerzenie>
+
 // dodanie plików do indeksu
 git add <nazwa plik.rozszerzenie> // dodaje konkretny plik
 git aad . // dodaje wszystkie pliki
 
-// usuwanie plików nie trakowanych w indeksie
+// sprawdzenie różnic w pliku 
+git diff // między zmianą w working copy a indeksem
+git diff <hash> <hash> między commitami
+
+// usuwanie plików nietrakowanych (nie dodanych do indeksu)
 git clean -n //pokazuje jakie pliki będą usunięte
 git clean -f // usuwa pliki
 
@@ -23,6 +30,7 @@ commit -m "komentarz"
 
 // historia commitów
 git log
+git log -p // dodatkowo pokazuje zmiany w plikach
 
 // podróż między commitami
 git log
@@ -31,3 +39,54 @@ git checkout master // powrót do głównego widoku
 
 // cofnięcie zmian z indeksu do workingcopy
 git reset HEAD <nazwa pliku.rozszerzenie>
+
+// cofnięcie zmian z jakiegoś commita (z repo) - zachowanie historii, usunięcie też wpada do historii
+git log
+git revert <hash>
+
+// usunięcie commita (z repo) - usunięcie z historii
+git log
+git reset --hard <hash>
+
+// ---------------------------------------------------branche--------------------------------------------------
+
+// lista branchy
+git branch // na zielono ten na którym obecnie jesteśmy
+
+// nowy branch
+git checkout -b <nazwa nowego brancha>
+
+// ---------------------------------------------------merge--------------------------------------------------
+
+// mergowanie zmian z brancha do master
+git checkout master // musimy przepiąć się na master
+git merge <nazwa brancha> // dodaje-usuwa pliki tak jak jest to na nowym branchu, przenosi widok na mastera
+
+
+// konflikt na mergu różne zmiany na tym sammym pliku w dwóch branchach
+git checkout master
+git merge <nazwa brancha> // powinien pojawić się konflikt
+// odpalamy konfliktowy plik, który ma te zmmiany i decydujemy, która zmiana zostaje a którą kasujemy, zapisujemy plik
+git status // powinno pokazywać plik w którym zrobiliśmy zmianę  (branch to: master / merging)
+git add .
+git commit -m "komentarz" (branch już będzie master)
+
+// ---------------------------------------------------połączenie z github--------------------------------------------------
+
+// połączenie lokal repo z online
+git remote add origin <hhtps>
+
+// transfer lokal do online - master branch
+git push -u origin master
+git push origin master
+
+// update lokal do online - wszystkie branche
+git push origin --all
+
+// transfer online do lokal
+// zainicjalizować repo w folderze
+git clone <https>
+
+// update lokal z online
+git pull origin master // update lokal z brancha master online
+// alternatynie git fetch + git merge
