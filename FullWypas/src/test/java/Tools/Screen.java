@@ -33,6 +33,29 @@ public class Screen {
         FileUtils.copyFile(plik, new File(path));
         return path;
     }
+    
+    
+    // v2 screeny z podzialem na foldery, nazwa folderu jako parametr "jira" podawany jako string w klasie testowej
+    
+        private static String zrzutEkranu(WebDriver driver, String jira, String nazwa) throws IOException {
+
+        // nadanie nazwy dla screena
+        String nazwaScreena = nazwa+".png";
+
+        // zrobienie screena
+        TakesScreenshot screenshot = (TakesScreenshot) driver;
+        File plik = screenshot.getScreenshotAs(OutputType.FILE);
+        String path = "src/resources/screeny/"+jira+"/"+nazwaScreena;
+        FileUtils.copyFile(plik, new File(path));
+        return path;
+    }
+
+    // pobranie screena
+    public static Media getScreenshot(WebDriver driver, String jira, String nazwa) throws IOException {
+
+        String path = zrzutEkranu(driver, jira, nazwa);
+        return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
+    }
 
     // pobranie screena
 

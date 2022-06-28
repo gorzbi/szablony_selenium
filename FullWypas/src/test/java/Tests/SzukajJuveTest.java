@@ -29,5 +29,18 @@ public class SzukajJuveTest extends Configuration {
         else {
             test01.fail("Nie udało się wyszukać", Screen.getScreenshot(browser));
         }
+        
+        
+        // v2 ze screenem w folderze:
+        
+        String jira ="folder"; // nazwa folderu do przechowywania screenu
+        
+        if (rezultatSzukania.isDisplayed()) {
+            test01.pass("Udało się wyszukać", ScreenElement.getElementScreenshot(driver, element, jira, "PASS")); // metoda dla screena z ScreenElement
+        }
+        else {
+            test01.fail("Nie udało się wyszukać", ScreenElement.getElementScreenshot(driver, element, jira, "FAIL"));
+        }
+        
     }
 }
