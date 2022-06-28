@@ -1,6 +1,5 @@
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
-
 import java.io.File;
 
 import static io.restassured.RestAssured.given;
@@ -18,6 +17,5 @@ public class POSTfromFile {
                 .body(cialoRequesta)
         .when().post("https://jsonplaceholder.typicode.com/posts")
         .then().log().all();
-        //elo
     }
 }
