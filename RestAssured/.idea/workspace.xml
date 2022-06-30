@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="commit na copy">
-      <change afterPath="$PROJECT_DIR$/src/test/java/POSTmap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/PostModel.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="POST from file, map, object model">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PUTmap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/body.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/body.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/POSTfromFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POSTfromFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/body.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/body.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POSTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,24 +51,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="TestNG.POSTobjectFromClass.postObjectFromClass">
-    <configuration name="POST.post" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.PUTmap.putMap">
+    <configuration name="GET.get" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="POST" />
-      <option name="METHOD_NAME" value="post" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="POSTfromFile.post" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="POSTfromFile" />
-      <option name="METHOD_NAME" value="post" />
+      <option name="MAIN_CLASS_NAME" value="GET" />
+      <option name="METHOD_NAME" value="get" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,13 +100,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PUTmap.putMap" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PUTmap" />
+      <option name="METHOD_NAME" value="putMap" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PUTmap.putMap" />
+        <item itemvalue="TestNG.GET.get" />
         <item itemvalue="TestNG.POSTobjectFromClass.postObjectFromClass" />
         <item itemvalue="TestNG.POSTmap.postMap" />
         <item itemvalue="TestNG.POSTfromFile.postMap" />
-        <item itemvalue="TestNG.POSTfromFile.post" />
-        <item itemvalue="TestNG.POST.post" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656347440977</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="POST from file, map, object model">
+      <created>1656429362613</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656429362614</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,6 +241,7 @@
     <MESSAGE value="POST z pliku + update" />
     <MESSAGE value="commit and push na copy" />
     <MESSAGE value="commit na copy" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit na copy" />
+    <MESSAGE value="POST from file, map, object model" />
+    <option name="LAST_COMMIT_MESSAGE" value="POST from file, map, object model" />
   </component>
 </project>

@@ -19,7 +19,7 @@ public class POSTobjectFromClass {
         given().log().all() //pozwoli sprawdzić co dokładnie wysłaliśmy z jakimi parametrami
                .contentType(ContentType.JSON) // należy ustawić właściwy content type
                .body(bodyNewPost)
-        .when().post("https://jsonplaceholder.typicode.com/posts")
+        .when().post("https://jsonplaceholder.typicode.com/posts") // metoda POST
         .then().log().all();
     }
 }
