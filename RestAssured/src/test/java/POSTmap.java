@@ -2,8 +2,9 @@ import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
+
+// POST - nowy wpis
 
 public class POSTmap {
 

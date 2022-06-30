@@ -1,8 +1,12 @@
 package model;
 
-public class PostModel {
+import com.fasterxml.jackson.annotation.JsonInclude;
 
-    // dla POSTobjectFromClass
+@JsonInclude(JsonInclude.Include.NON_NULL) // nie musimy przesyłać w body pól, które są null
+
+public class PutModel {
+
+    // dla PUTobjectFromClass
     // domyślnie są to wartości = null
     private int userId;
     private String title;

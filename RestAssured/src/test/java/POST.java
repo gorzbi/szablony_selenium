@@ -1,7 +1,8 @@
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
+
+// POST - nowy wpis
 
 public class POST {
 

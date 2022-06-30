@@ -1,10 +1,10 @@
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
+
+// PUT - aktualizacja całego wpisu
 
 public class PUTmap {
 
@@ -12,7 +12,7 @@ public class PUTmap {
     public static void putMap() {
 
         // jak nie podamy jakiegoś pola to PUT go usunie w aktualizowanym wpisie
-        Map<String, Object> mapBody = new HashMap<>(); // string bo to jest opis pola, object bo pole może być stringiem, int lub inne
+        Map<String, Object> mapBody = new HashMap<>(); // string bo to jest nazwa pola, object bo pole może być stringiem, int lub inne
         mapBody.put("userID", "11");
         mapBody.put("title", "cos");
         mapBody.put("body", "cos");

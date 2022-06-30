@@ -1,8 +1,9 @@
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import java.io.File;
-
 import static io.restassured.RestAssured.given;
+
+// POST - nowy wpis
 
 public class POSTfromFile {
 
