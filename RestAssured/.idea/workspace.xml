@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="PUT + POST update">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PUTobjectFromClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/model/PutModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTmap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUTmap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/model/PostModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/model/PostModel.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="PUT + POST update 2.0">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PATCHobjectFromClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/PatchModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +49,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="model" />
       <recent name="" />
+      <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PUTobjectFromClass.putObjectFromClass">
+  <component name="RunManager" selected="TestNG.PATCHobjectFromClass.patchObjectFromClass">
     <configuration name="GET.get" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,11 +66,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="POSTmap.postMap" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PATCHobjectFromClass.patchObjectFromClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="POSTmap" />
-      <option name="METHOD_NAME" value="postMap" />
+      <option name="MAIN_CLASS_NAME" value="PATCHobjectFromClass" />
+      <option name="METHOD_NAME" value="patchObjectFromClass" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -123,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PATCHobjectFromClass.patchObjectFromClass" />
         <item itemvalue="TestNG.PUTobjectFromClass.putObjectFromClass" />
         <item itemvalue="TestNG.PUTmap.putMap" />
         <item itemvalue="TestNG.GET.get" />
         <item itemvalue="TestNG.POSTobjectFromClass.postObjectFromClass" />
-        <item itemvalue="TestNG.POSTmap.postMap" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656581074903</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="PUT + POST update 2.0">
+      <created>1656582357912</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656582357912</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +266,7 @@
     <MESSAGE value="commit na copy" />
     <MESSAGE value="POST from file, map, object model" />
     <MESSAGE value="PUT + POST update" />
-    <option name="LAST_COMMIT_MESSAGE" value="PUT + POST update" />
+    <MESSAGE value="PUT + POST update 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="PUT + POST update 2.0" />
   </component>
 </project>
