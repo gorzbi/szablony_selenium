@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="PATCH + POST update">
-      <change afterPath="$PROJECT_DIR$/src/test/java/DELETE.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="DELETE">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PathParams.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,24 +53,12 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DELETE">
+  <component name="RunManager" selected="TestNG.PathParams">
     <configuration name="DELETE" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DELETE" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GET.get" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GET" />
-      <option name="METHOD_NAME" value="get" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -113,13 +101,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PathParams" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PathParams" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PathParams" />
         <item itemvalue="TestNG.DELETE" />
         <item itemvalue="TestNG.PATCHobjectFromClass.patchObjectFromClass" />
         <item itemvalue="TestNG.PUTobjectFromClass.putObjectFromClass" />
         <item itemvalue="TestNG.PUTmap.putMap" />
-        <item itemvalue="TestNG.GET.get" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656582888542</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="DELETE">
+      <created>1656583416834</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1656583416834</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,6 +280,7 @@
     <MESSAGE value="PUT + POST update" />
     <MESSAGE value="PUT + POST update 2.0" />
     <MESSAGE value="PATCH + POST update" />
-    <option name="LAST_COMMIT_MESSAGE" value="PATCH + POST update" />
+    <MESSAGE value="DELETE" />
+    <option name="LAST_COMMIT_MESSAGE" value="DELETE" />
   </component>
 </project>
