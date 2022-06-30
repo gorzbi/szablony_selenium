@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="DELETE">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PathParams.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="Path Params">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Filtry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PathParams">
+  <component name="RunManager" selected="TestNG.Filtry.filtryKilka">
     <configuration name="DELETE" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
@@ -65,35 +65,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Filtry" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Filtry" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Filtry.filtryKilka" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Filtry" />
+      <option name="METHOD_NAME" value="filtryKilka" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PATCHobjectFromClass.patchObjectFromClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PATCHobjectFromClass" />
       <option name="METHOD_NAME" value="patchObjectFromClass" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PUTmap.putMap" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PUTmap" />
-      <option name="METHOD_NAME" value="putMap" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PUTobjectFromClass.putObjectFromClass" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PUTobjectFromClass" />
-      <option name="METHOD_NAME" value="putObjectFromClass" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Filtry.filtryKilka" />
+        <item itemvalue="TestNG.Filtry" />
         <item itemvalue="TestNG.PathParams" />
         <item itemvalue="TestNG.DELETE" />
         <item itemvalue="TestNG.PATCHobjectFromClass.patchObjectFromClass" />
-        <item itemvalue="TestNG.PUTobjectFromClass.putObjectFromClass" />
-        <item itemvalue="TestNG.PUTmap.putMap" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656583416834</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Path Params">
+      <created>1656584375938</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1656584375938</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +287,7 @@
     <MESSAGE value="PUT + POST update 2.0" />
     <MESSAGE value="PATCH + POST update" />
     <MESSAGE value="DELETE" />
-    <option name="LAST_COMMIT_MESSAGE" value="DELETE" />
+    <MESSAGE value="Path Params" />
+    <option name="LAST_COMMIT_MESSAGE" value="Path Params" />
   </component>
 </project>
