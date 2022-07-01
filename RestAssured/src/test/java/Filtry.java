@@ -10,7 +10,7 @@ public class Filtry {
 
         // z jednym parametrem np. id
         given().log().all().queryParam("id",1,2)
-                .when().get("https://jsonplaceholder.typicode.com/posts/").then().log().all();
+                .when().get("http://localhost:3000/posts/").then().log().all();
 
     }
 
@@ -20,10 +20,10 @@ public class Filtry {
         // dla kilku parametrów np. id + title, wszystkie muszą być spełnione dla danego wpisu
         Map<String, Object> params = new HashMap<>(); // string bo to jest opis pola, object bo pole może być stringiem, int lub inne
         params.put("id", "2");
-        params.put("title", "qui est esse");
+        params.put("title", "what");
 
 
         given().log().all().queryParams(params)
-                .when().get("https://jsonplaceholder.typicode.com/posts").then().log().all();
+                .when().get("http://localhost:3000/posts").then().log().all();
     }
 }

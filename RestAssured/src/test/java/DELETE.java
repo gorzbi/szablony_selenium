@@ -9,7 +9,7 @@ public class DELETE {
 
         // jeśli usuwamy nieistniejący zasób to w odpowiedzi dostaniemy 404, test zakończy się sukcesem bo nic nie jest weryfikowane
 
-        when().delete("https://jsonplaceholder.typicode.com/posts/1") // metoda DELETE
+        when().delete("http://localhost:3000/posts/2") // metoda DELETE
                 .then().log().all(); // w response body będzie pusto
     }
 }

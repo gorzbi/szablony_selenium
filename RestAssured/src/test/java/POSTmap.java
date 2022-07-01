@@ -12,15 +12,14 @@ public class POSTmap {
     public static void postMap() {
 
         Map<String, Object> mapBody = new HashMap<>(); // string bo to jest opis pola, object bo pole może być stringiem, int lub inne
-        mapBody.put("userID", "11");
         mapBody.put("title", "cos");
-        mapBody.put("body", "cos");
+        mapBody.put("author", "cos");
 
         given()
                 .log().all() //pozwoli sprawdzić co dokładnie wysłaliśmy z jakimi parametrami
                 .contentType(ContentType.JSON) // należy ustawić właściwy content type
                 .body(mapBody)
-                .when().post("https://jsonplaceholder.typicode.com/posts") // metoda POST
+                .when().post("http://localhost:3000/posts") // metoda POST
                 .then().log().all();
     }
 }

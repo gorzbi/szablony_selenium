@@ -11,16 +11,15 @@ public class POST {
 
         String cialoRequesta = """
                 {
-                    "userId": 111,
-                    "title": "elo2",
-                    "body": "elo2"
+                    "title": "new",
+                    "author": "post"
                 }""";
 
         given()
                 .log().all() //pozwoli sprawdzić co dokładnie wysłaliśmy z jakimi parametrami
                 .contentType(ContentType.JSON) // należy ustawić właściwy content type
                 .body(cialoRequesta)
-        .when().post("https://jsonplaceholder.typicode.com/posts") // metoda POST
+        .when().post("http://localhost:3000/posts") // metoda POST
         .then().log().all();
 
     }

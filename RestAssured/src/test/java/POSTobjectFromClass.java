@@ -1,5 +1,5 @@
 import io.restassured.http.ContentType;
-import model.PostModel;
+import model.BodyModel;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
@@ -10,17 +10,16 @@ public class POSTobjectFromClass {
     @Test
     public static void postObjectFromClass() {
 
-        // z modelu Post
+        // z modelu BodyModel
 
-        PostModel bodyNewPost = new PostModel(); // odwołanie do klasy z modelu
-        bodyNewPost.setUserId(120);
+        BodyModel bodyNewPost = new BodyModel(); // odwołanie do klasy z modelu
         bodyNewPost.setTitle("hej");
-        bodyNewPost.setBody("hejbody");
+        bodyNewPost.setAuthor("hejauthor");
 
         given().log().all() //pozwoli sprawdzić co dokładnie wysłaliśmy z jakimi parametrami
                .contentType(ContentType.JSON) // należy ustawić właściwy content type
                .body(bodyNewPost)
-        .when().post("https://jsonplaceholder.typicode.com/posts") // metoda POST
+        .when().post("http://localhost:3000/posts") // metoda POST
         .then().log().all();
     }
 }

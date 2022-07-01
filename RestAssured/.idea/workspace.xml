@@ -4,9 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="Path Params">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Filtry.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="Query Params">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Weryfikacja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/model/BodyModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DELETE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DELETE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Filtry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Filtry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PATCHobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PATCHobjectFromClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POSTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUTmap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PUTobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUTobjectFromClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PathParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PathParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/PatchModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/PostModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/model/PutModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/body.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/body.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GET.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GET.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POSTobjectFromClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POSTobjectFromClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/model/PostModel.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,38 +69,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
       <recent name="model" />
+      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Filtry.filtryKilka">
-    <configuration name="DELETE" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Weryfikacja.weryfikacjaBodyKlasyModel">
+    <configuration name="Weryfikacja.weryfikacjaBodyKlasyModel" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DELETE" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Filtry" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Filtry" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Filtry.filtryKilka" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Filtry" />
-      <option name="METHOD_NAME" value="filtryKilka" />
+      <option name="MAIN_CLASS_NAME" value="Weryfikacja" />
+      <option name="METHOD_NAME" value="weryfikacjaBodyKlasyModel" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -88,11 +86,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PATCHobjectFromClass.patchObjectFromClass" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Weryfikacja.weryfikacjaResponseBody" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PATCHobjectFromClass" />
-      <option name="METHOD_NAME" value="patchObjectFromClass" />
+      <option name="MAIN_CLASS_NAME" value="Weryfikacja" />
+      <option name="METHOD_NAME" value="weryfikacjaResponseBody" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,11 +98,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PathParams" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Weryfikacja.weryfikacjaResponseString" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PathParams" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="Weryfikacja" />
+      <option name="METHOD_NAME" value="weryfikacjaResponseString" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Weryfikacja.weryfikacjaStatusu" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Weryfikacja" />
+      <option name="METHOD_NAME" value="weryfikacjaStatusu" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Weryfikacja.weryfikacjaWartosciPola" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Weryfikacja" />
+      <option name="METHOD_NAME" value="weryfikacjaWartosciPola" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -113,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.Filtry.filtryKilka" />
-        <item itemvalue="TestNG.Filtry" />
-        <item itemvalue="TestNG.PathParams" />
-        <item itemvalue="TestNG.DELETE" />
-        <item itemvalue="TestNG.PATCHobjectFromClass.patchObjectFromClass" />
+        <item itemvalue="TestNG.Weryfikacja.weryfikacjaBodyKlasyModel" />
+        <item itemvalue="TestNG.Weryfikacja.weryfikacjaWartosciPola" />
+        <item itemvalue="TestNG.Weryfikacja.weryfikacjaResponseString" />
+        <item itemvalue="TestNG.Weryfikacja.weryfikacjaResponseBody" />
+        <item itemvalue="TestNG.Weryfikacja.weryfikacjaStatusu" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656584375938</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Query Params">
+      <created>1656586028939</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656586028939</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -288,6 +318,7 @@
     <MESSAGE value="PATCH + POST update" />
     <MESSAGE value="DELETE" />
     <MESSAGE value="Path Params" />
-    <option name="LAST_COMMIT_MESSAGE" value="Path Params" />
+    <MESSAGE value="Query Params" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query Params" />
   </component>
 </project>
