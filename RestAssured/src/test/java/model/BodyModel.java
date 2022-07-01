@@ -39,7 +39,7 @@ public class BodyModel {
 
 
     // porównywanie obiektów alt + insert equals() hash code()
-    // bez id bo id jest nadawane po utworzeniu elementu
+    // bez id, bo id jest nadawane po utworzeniu elementu i nie jest znane podczas dodawania elementu, gdy robimy porównanie
 
     @Override
     public boolean equals(Object o) {
