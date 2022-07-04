@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="Good practice + inny zapis">
-      <change afterPath="$PROJECT_DIR$/src/test/java/JsonPath.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="JsonPath">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JsonPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JsonPath.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656923791779</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="JsonPath">
+      <created>1656931702494</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1656931702494</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -323,15 +330,16 @@
     <MESSAGE value="Weryfikacja + update" />
     <MESSAGE value="Porównanie obiektów tej samej klasy + update" />
     <MESSAGE value="Good practice + inny zapis" />
-    <option name="LAST_COMMIT_MESSAGE" value="Good practice + inny zapis" />
+    <MESSAGE value="JsonPath" />
+    <option name="LAST_COMMIT_MESSAGE" value="JsonPath" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/JsonPath.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
+          <line>29</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
