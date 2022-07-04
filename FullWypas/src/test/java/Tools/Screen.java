@@ -34,6 +34,14 @@ public class Screen {
         return path;
     }
     
+        // pobranie screena
+
+    public static Media getScreenshot(WebDriver browser) throws IOException {
+
+        String path = zrzutEkranu(browser);
+        return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
+    }
+    
     
     // v2 screeny z podzialem na foldery, nazwa folderu jako parametr "jira" podawany jako string w klasie testowej
     
@@ -57,11 +65,5 @@ public class Screen {
         return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
     }
 
-    // pobranie screena
 
-    public static Media getScreenshot(WebDriver browser) throws IOException {
-
-        String path = zrzutEkranu(browser);
-        return MediaEntityBuilder.createScreenCaptureFromPath(path).build();
-    }
 }
