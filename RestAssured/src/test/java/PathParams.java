@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.given;
 public class PathParams {
 
     @Test
-    public static void pathParams() {
+    public void pathParams() {
 
         //given().when().get("http://localhost:3000/posts/1").then().log().all();// na sztywno wpisany id posta
 

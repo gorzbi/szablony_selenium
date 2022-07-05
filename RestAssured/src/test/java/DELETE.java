@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.when;
 public class DELETE {
 
     @Test
-    public static void delete() {
+    public void delete() {
 
         // jeśli usuwamy nieistniejący zasób to w odpowiedzi dostaniemy 404, test zakończy się sukcesem bo nic nie jest weryfikowane
 

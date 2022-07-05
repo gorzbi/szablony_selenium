@@ -4,7 +4,7 @@ import static io.restassured.RestAssured.when;
 public class GET {
 
     @Test
-    public static void get() {
+    public void get() {
 
         System.out.println("Nic nie wyświetli");
         when().get("http://localhost:3000/posts/1"); // tu wykona tylko request ale nic nam nie wyświetli

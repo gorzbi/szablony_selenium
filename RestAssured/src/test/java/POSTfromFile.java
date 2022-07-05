@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class POSTfromFile {
 
     @Test
-    public static void post() {
+    public void post() {
 
         File cialoRequesta = new File("src/test/resources/body.json");
 

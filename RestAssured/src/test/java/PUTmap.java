@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 public class PUTmap {
 
     @Test
-    public static void putMap() {
+    public void putMap() {
 
         // jak nie podamy jakiegoś pola to PUT go usunie w aktualizowanym wpisie
         Map<String, Object> mapBody = new HashMap<>(); // string bo to jest nazwa pola, object bo pole może być stringiem, int lub inne

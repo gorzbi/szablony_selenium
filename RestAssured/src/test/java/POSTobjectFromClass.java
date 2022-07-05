@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class POSTobjectFromClass {
 
     @Test
-    public static void postObjectFromClass() {
+    public void postObjectFromClass() {
 
         // z modelu BodyModel
 

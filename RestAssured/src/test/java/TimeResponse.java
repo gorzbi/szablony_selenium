@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.when;
 public class TimeResponse {
 
     @Test
-    public static void time() {
+    public void time() {
 
         long time = when().get("http://localhost:3000/posts/1").timeIn(TimeUnit.MILLISECONDS);
         System.out.println(time);

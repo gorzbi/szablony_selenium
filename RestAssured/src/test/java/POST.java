@@ -7,7 +7,7 @@ import static io.restassured.RestAssured.given;
 public class POST {
 
     @Test
-    public static void post() {
+    public void post() {
 
         String cialoRequesta = """
                 {

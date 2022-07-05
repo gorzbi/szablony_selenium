@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.given;
 public class POSTmap {
 
     @Test
-    public static void postMap() {
+    public void postMap() {
 
         Map<String, Object> mapBody = new HashMap<>(); // string bo to jest opis pola, object bo pole może być stringiem, int lub inne
         mapBody.put("title", "cos");

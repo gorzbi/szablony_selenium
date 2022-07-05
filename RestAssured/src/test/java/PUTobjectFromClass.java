@@ -8,7 +8,7 @@ import static io.restassured.RestAssured.given;
 public class PUTobjectFromClass {
 
     @Test
-    public static void putObjectFromClass() {
+    public void putObjectFromClass() {
 
         // z modelu BodyModel
         // jak nie podamy jakiegoś pola to ustawimy dla niego null bo jest to pole w body klasy PutModel pole istnieje z domyślnym null
