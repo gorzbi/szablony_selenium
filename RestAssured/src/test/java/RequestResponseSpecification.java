@@ -1,11 +1,12 @@
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class GETbaseUrl {
+public class RequestResponseSpecification {
 
     @Test
     public void get() {
@@ -21,16 +22,24 @@ public class GETbaseUrl {
 
     //------------------inny zapis---------------------
 
-    RequestSpecification base; // tworzymy pole, które będzie wykorzystywane w metodzie
+    RequestSpecification req; // tworzymy pole, które będzie wykorzystywane jako zmienna w metodzie dla requesta
+    ResponseSpecification resp;
 
     @BeforeClass
     public void base() {
 
         // utworzenie wspólnego elementu dla wielu requestów wywoływany przed testem
 
-        base = new RequestSpecBuilder().
+        req = new RequestSpecBuilder().
                 setBaseUri("http://localhost:3000").
                 setBasePath("posts").
+                build();
+
+
+        // utworzenie wspólnego elementu dla wielu responsów wywoływany przed testem
+
+        resp = new ResponseSpecBuilder().
+                expectStatusCode(200).
                 build();
     }
 
@@ -38,10 +47,10 @@ public class GETbaseUrl {
     public void get2() {
 
         given().
-                spec(base). // baseUri+basePath
+                spec(req). // baseUri+basePath
         when().
                 get("/1").
         then().
-                log().body();
+                log().body().spec(resp);
     }
 }

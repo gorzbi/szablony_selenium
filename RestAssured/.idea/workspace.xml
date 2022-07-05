@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="Time response">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GETbaseUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DELETE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DELETE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GET.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GET.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PATCHobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PATCHobjectFromClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTfromFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTmap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTobjectFromClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/POSTporownanieObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/POSTporownanieObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUTmap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUTmap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PUTobjectFromClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PUTobjectFromClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PathParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PathParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TimeResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TimeResponse.java" afterDir="false" />
+    <list default="true" id="802af592-c850-4462-bd7a-6aa4ac7282d0" name="Changes" comment="Inny zapis GET + update">
+      <change beforePath="$PROJECT_DIR$/src/test/java/GETbaseUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RequestResponseSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/GET.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GET.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POST.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POSTfromFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POSTfromFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POSTmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POSTmap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/POSTobjectFromClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/POSTobjectFromClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PUTmap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PUTmap.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,18 +61,7 @@
       <recent name="model" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GETbaseUrl">
-    <configuration name="GETbaseUrl" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="RestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GETbaseUrl" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.RequestResponseSpecification">
     <configuration name="InnyZapis.jasonPath" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="RestAssured" />
       <option name="PACKAGE_NAME" value="" />
@@ -98,6 +80,17 @@
       <option name="MAIN_CLASS_NAME" value="JsonPath" />
       <option name="METHOD_NAME" value="response" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestResponseSpecification" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="RestAssured" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RequestResponseSpecification" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -129,7 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GETbaseUrl" />
+        <item itemvalue="TestNG.RequestResponseSpecification" />
         <item itemvalue="TestNG.TimeResponse" />
         <item itemvalue="TestNG.XMLPath.xmlPathTest" />
         <item itemvalue="TestNG.JsonPath.response" />
@@ -335,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657008986489</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Inny zapis GET + update">
+      <created>1657010504448</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1657010504448</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,7 +376,8 @@
     <MESSAGE value="JsonPath update 2.0" />
     <MESSAGE value="XML Path" />
     <MESSAGE value="Time response" />
-    <option name="LAST_COMMIT_MESSAGE" value="Time response" />
+    <MESSAGE value="Inny zapis GET + update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inny zapis GET + update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
