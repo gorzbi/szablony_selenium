@@ -1,5 +1,8 @@
+import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.filter.log.RequestLoggingFilter;
+import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.specification.*;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -41,6 +44,13 @@ public class RequestResponseSpecification {
         resp = new ResponseSpecBuilder().
                 expectStatusCode(200).
                 build();
+
+        // wywoływanie info o reqest i response zamiast log().all()
+        RequestLoggingFilter requestInfo = new RequestLoggingFilter(); // info o requescie
+        ResponseLoggingFilter responseInfo = new ResponseLoggingFilter(); // info o responsie
+        RestAssured.filters(requestInfo, responseInfo); // wywołanie info
+
+
     }
 
     @Test
@@ -51,6 +61,6 @@ public class RequestResponseSpecification {
         when().
                 get("/1").
         then().
-                log().body().spec(resp);
+                spec(resp); // już nie trzeba podawać log().body() itp. bo są filters
     }
 }
